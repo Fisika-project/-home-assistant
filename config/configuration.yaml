@@ -1,1 +1,18 @@
-
+homeassistant:
+  name: Home
+  latitude: 55.7558
+  longitude: 37.6173
+  elevation: 156
+  unit_system: metric
+  time_zone: Europe/Moscow
+  language: ru
+default_config:
+logger:
+  default: info
+http:
+  server_port: 8123
+automation: !include automations.yaml
+scene: !include scenes.yaml
+script: !include scripts.yaml
+homeassistant:
+  packages: !include_dir_named packages
