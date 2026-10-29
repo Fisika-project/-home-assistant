@@ -35,3 +35,21 @@ Home Assistant Container: установка через Docker на уже су�
 Невероятная гибкость: можно связать несвязуемое. Например, настроить сценарий, где при открытии умного замка Xiaomi включается розетка Tuya, а Яндекс.Станция проигрывает ваш любимый плейлист.
 Зависимость от железа: надежность системы на 100% зависит от качества накопителя. Дешевые microSD-карты часто выходят из строя из-за постоянной записи логов, поэтому для серьезных проектов рекомендуется использовать SSD.
 https://serverflow.ru/catalog/komplektuyushchie/odnoplatnye-kompyutery/mikrokompyuter-raspberry-pi-4-model-b-2gb/
+
+config/configuration.yaml - главный файл настроек
+
+config/packages/yandex_station.yaml - Интеграция Яндекс станции
+
+config/packages/yandex_smart_home.yaml - проброс устройств из Home Assistant в платформу Яндекса
+
+docker-compose.yml - запускает Home Assistant
+
+Хочешь изменить часовой пояс или координаты? → configuration.yaml
+
+Хочешь добавить новую Яндекс Станцию? → yandex_station.yaml
+
+Хочешь передать новое устройство в Яндекс? → yandex_smart_home.yaml
+
+Хочешь изменить настройки Docker? → docker-compose.yml
+
+Хочешь обновить документацию? → README.md
